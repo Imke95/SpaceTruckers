@@ -1,0 +1,13 @@
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\bin\Debug\netcoreapp3.1\DBContext.deps.json
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\bin\Debug\netcoreapp3.1\DBContext.runtimeconfig.json
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\bin\Debug\netcoreapp3.1\DBContext.runtimeconfig.dev.json
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\bin\Debug\netcoreapp3.1\DBContext.dll
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\bin\Debug\netcoreapp3.1\DBContext.pdb
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.csproj.AssemblyReference.cache
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.AssemblyInfoInputs.cache
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.AssemblyInfo.cs
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.csproj.CoreCompileInputs.cache
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.dll
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.pdb
+C:\Users\User\Programming\CSharp\Space_Truckers\DBContext\obj\Debug\netcoreapp3.1\DBContext.genruntimeconfig.cache
