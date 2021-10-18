@@ -35,7 +35,7 @@ namespace DBContext.Services
 
         public Planet FindPlanet(string name)
         {
-            return (from p in _context.Planets.Include("ConnectedPlanets").ToList() where (p.Name).Equals(name) select p).FirstOrDefault();
+            return (from p in _context.Planets.ToList() where (p.Name).Equals(name) select p).FirstOrDefault();
         }
 
 

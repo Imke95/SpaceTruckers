@@ -24,7 +24,12 @@ namespace DBContext.Services
 
         public List<Planet> GetAllPlanets()
         {
-            return _context.Planets.Include("ConnectedPlanets").ToList();
+            return _context.Planets.ToList();
+        }
+
+        public IEnumerable<Connection> GetConnectedPlanets(int ownerId)
+        {
+            return _context.Connections.Where(p=>p.Owner.PlanetId==ownerId);
         }
 
         public Planet GetPlanetById(int id)
