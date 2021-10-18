@@ -19,7 +19,7 @@
         var start = document.getElementById("start").value;
         var eind = document.getElementById("eind").value;
         //var url = "/GetPath";
-        var url = "https://localhost:44379/GetPath?from=" + start + "&to=" + eind;
+        var url = "https://spacetruckers2.azurewebsites.net/GetPath?from=" + start + "&to=" + eind;
         console.log(url);
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
