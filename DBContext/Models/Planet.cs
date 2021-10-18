@@ -66,16 +66,16 @@ namespace DBContext.Models
             return path;
         }
 
-        public override string ToString()
-        {
-            StringBuilder answer = new StringBuilder(Name);
-            answer.Append(":\tThe amount of connections = " + ConnectedPlanets.Count);
-            for (int i = 0; i < ConnectedPlanets.Count; i++)
-            {
-                answer.Append("\n---" + ConnectedPlanets[i].GetPlanet().Name + "\t" + ConnectedPlanets[i].ConnectedWeight);
-            }
+        //public override string ToString()
+        //{
+        //    StringBuilder answer = new StringBuilder(Name);
+        //    answer.Append(":\tThe amount of connections = " + ConnectedPlanets.Count);
+        //    for (int i = 0; i < ConnectedPlanets.Count; i++)
+        //    {
+        //        answer.Append("\n---" + ConnectedPlanets[i].GetPlanet().Name + "\t" + ConnectedPlanets[i].ConnectedWeight);
+        //    }
 
-            return answer.ToString();
-        }
+        //    return answer.ToString();
+        //}
     }
 }

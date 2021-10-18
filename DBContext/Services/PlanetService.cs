@@ -31,7 +31,7 @@ namespace DBContext.Services
         {
             return _context.Connections.Where(p=>p.Owner.PlanetId==ownerId);
         }
-        
+
         public Planet GetPlanetById(int id)
         {
             return (from p in GetAllPlanets() where p.PlanetId == id select p).FirstOrDefault();
