@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DBContext.Services;
 using DBContext.Models;
-
+using System.Diagnostics;
 namespace Space_Truckers.Controllers
 {
     [Route("Planet")]
@@ -35,6 +35,7 @@ namespace Space_Truckers.Controllers
         [HttpPost]
         public void Post([FromBody] Planet planet)
         {
+            Debug.WriteLine("post");
             _service.SaveNewPlanet(planet);
         }
 

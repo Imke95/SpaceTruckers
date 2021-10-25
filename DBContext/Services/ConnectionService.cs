@@ -25,7 +25,13 @@ namespace DBContext.Services
 
         public List<Connection> GetAllConnections()
         {
+
             return _context.Connections.Include("Owner").Include("ConnectedTo").ToList();
+        }
+
+        public Planet GetConnectedPlanets(int ownerId)
+        {
+            return _context.Planets.Where(p => p.PlanetId == ownerId).FirstOrDefault();
         }
 
         public Connection GetConnectionById(int id)

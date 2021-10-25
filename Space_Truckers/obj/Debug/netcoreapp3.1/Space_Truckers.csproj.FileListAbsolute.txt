@@ -78,3 +78,4 @@ C:\Users\User\Programming\CSharp\Space_Truckers\Space_Truckers\obj\Debug\netcore
 C:\Users\User\Programming\CSharp\Space_Truckers\Space_Truckers\obj\Debug\netcoreapp3.1\Space_Truckers.dll
 C:\Users\User\Programming\CSharp\Space_Truckers\Space_Truckers\obj\Debug\netcoreapp3.1\Space_Truckers.pdb
 C:\Users\User\Programming\CSharp\Space_Truckers\Space_Truckers\obj\Debug\netcoreapp3.1\Space_Truckers.genruntimeconfig.cache
+C:\Users\User\Programming\CSharp\Space_Truckers\Space_Truckers\bin\Debug\netcoreapp3.1\libman.json
