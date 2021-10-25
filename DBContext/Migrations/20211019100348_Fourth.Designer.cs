@@ -4,14 +4,16 @@ using DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DBContext.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20211019100348_Fourth")]
+    partial class Fourth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,7 +74,7 @@ namespace DBContext.Migrations
                         .HasForeignKey("ConnectedToPlanetId");
 
                     b.HasOne("DBContext.Models.Planet", "Owner")
-                        .WithMany()
+                        .WithMany("ConnectedPlanets")
                         .HasForeignKey("OwnerPlanetId");
                 });
 #pragma warning restore 612, 618

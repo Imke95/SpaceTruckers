@@ -13,15 +13,12 @@ namespace DBContext.Models
         private int _planetId;
         public int PlanetId { get { return _planetId; } set { _planetId = value; } }
         public string Name { get; set; }
-
+        public int X { get; set; }
+        public int Y { get; set; }
         private int _pathweight = int.MaxValue;
-        [NotMapped]
-        public List<Connection> ConnectedPlanets { get; set; }
 
-        //ConnectionService  _service = new ConnectionService();
-        //List<Connection> l = new ConnectionService().GetAllConnections();
-        //private List<Connection> connections = (from c in new List<int>() {1,2 } where c.Owner.PlanetId==PlanetId select c).;
-        //return (from c in GetAllConnections() where c.ConnectionId == id select c).FirstOrDefault();
+  //      [NotMapped]
+//        public List<Connection> ConnectedPlanets { get; set; }
 
         // Variables used by dijkstra's algorithm
         [NotMapped]
@@ -35,11 +32,13 @@ namespace DBContext.Models
         // Constructors
         public Planet() { }
 
-        public Planet(string name)
+        public Planet(string name, int x,int y)
         {
             if (!String.IsNullOrEmpty(name))
             {
                 Name = name;
+                X = x;
+                Y = y;
             }
             else
             {

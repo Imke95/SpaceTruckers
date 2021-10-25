@@ -21,16 +21,16 @@ namespace DBContext.Models
             _planetService.DeleteAllPlanets();
 
             //Add planets
-            Planet A = new Planet("A");
-            Planet B = new Planet("B");
-            Planet C = new Planet("C");
-            Planet D = new Planet("D");
-            Planet E = new Planet("E");
-            Planet F = new Planet("F");
-            Planet G = new Planet("G");
-            Planet H = new Planet("H");
-            Planet I = new Planet("I");
-            Planet J = new Planet("J");
+            Planet A = new Planet("A",-350,50);
+            Planet B = new Planet("B",-400,250);
+            Planet C = new Planet("C",-300,400);
+            Planet D = new Planet("D",-50,225);
+            Planet E = new Planet("E",0,50);
+            Planet F = new Planet("F",100,100);
+            Planet G = new Planet("G",75,250);
+            Planet H = new Planet("H",225,250);
+            Planet I = new Planet("I",400,25);
+            Planet J = new Planet("J",275,325);
             _planetService.SaveNewPlanets(new List<Planet>() { A, B, C, D, E, F, G, H, I, J });
 
             //Add connections

@@ -9,7 +9,7 @@ namespace DBContext.Models
     {
         public int ConnectionId { get; set; }
         public Planet ConnectedTo { get; set; }
-        [InverseProperty("ConnectedPlanets")]
+        //[InverseProperty("ConnectedPlanets")]
         public Planet Owner { get; set; }
         public int ConnectedWeight { get; set; }
 
