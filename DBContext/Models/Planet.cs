@@ -56,10 +56,7 @@ namespace DBContext.Models
             if (PreviousPlanet != null)
             {
                 PreviousPlanet.PrintPath(list);
-            } else
-            {
-                list.Add(_pathweight.ToString());
-            }
+            } 
             list.Add(Name);
             return list;
         }
