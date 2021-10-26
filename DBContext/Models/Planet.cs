@@ -54,15 +54,15 @@ namespace DBContext.Models
             Visited = false;
         }
 
-        public StringBuilder PrintPath(StringBuilder path)
+        public List<string> PrintPath(List<string> list)
         {
             Debug.WriteLine("Previous planet = " + PreviousPlanet);
-            path.Insert(0, Name + " > ");
+            list.Add(Name);
             if (PreviousPlanet != null)
             {
-                PreviousPlanet.PrintPath(path);
+                PreviousPlanet.PrintPath(list);
             }
-            return path;
+            return list;
         }
 
         //public override string ToString()

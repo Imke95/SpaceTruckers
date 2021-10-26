@@ -23,10 +23,10 @@ namespace Space_Truckers.Controllers
         }
 
         [HttpGet]
-        public string ShortestPath(string from, string to)
+        public List<string> ShortestPath(string from, string to)
         {
             Debug.WriteLine(ToString());
-            string result = "";
+            List<string> result=new List<string>();
             List<Planet> planets = _planetService.GetAllPlanets().ToList();
             Planet currentPlanet = _connectionService.FindPlanet(from);
             //Planet currentPlanet = (from planet in planets where from.Equals(p.Name) select p).FirstOrDefault();
@@ -55,8 +55,7 @@ namespace Space_Truckers.Controllers
                 // PrintTheWeightOfEachPlanet(planets);
 
                 // Print the shortest route
-                StringBuilder path = currentPlanet.PrintPath(new StringBuilder());
-                result = path.ToString().Substring(0, path.Length - 3);
+                result = currentPlanet.PrintPath(result);
                 Debug.WriteLine("\nThe shortest path = " + result);
             }
             else
