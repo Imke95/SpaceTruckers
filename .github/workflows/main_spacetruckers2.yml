@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'spacetruckers2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B4FCFF0C2EAA410A9D5E22A3DE58F8E8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A35F5EC702474C4FA937C34059870DEA }}
           package: .
