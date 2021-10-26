@@ -48,6 +48,7 @@ namespace Space_Truckers.Controllers
                 // PrintTheWeightOfEachPlanet(planets);
 
                 // Print the shortest route
+                result.Add(currentPlanet.PathWeight.ToString());
                 result = currentPlanet.PrintPath(result);
                 Debug.WriteLine("\nThe shortest path = " + result.Count.ToString());
             }
