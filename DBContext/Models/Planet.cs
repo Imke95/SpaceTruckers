@@ -17,9 +17,6 @@ namespace DBContext.Models
         public int Y { get; set; }
         private int _pathweight = int.MaxValue;
 
-  //      [NotMapped]
-//        public List<Connection> ConnectedPlanets { get; set; }
-
         // Variables used by dijkstra's algorithm
         [NotMapped]
         public bool Visited { get; set; }
@@ -56,25 +53,15 @@ namespace DBContext.Models
 
         public List<string> PrintPath(List<string> list)
         {
-            Debug.WriteLine("Previous planet = " + PreviousPlanet);
-            list.Add(Name);
             if (PreviousPlanet != null)
             {
                 PreviousPlanet.PrintPath(list);
+            } else
+            {
+                list.Add(_pathweight.ToString());
             }
+            list.Add(Name);
             return list;
         }
-
-        //public override string ToString()
-        //{
-        //    StringBuilder answer = new StringBuilder(Name);
-        //    answer.Append(":\tThe amount of connections = " + ConnectedPlanets.Count);
-        //    for (int i = 0; i < ConnectedPlanets.Count; i++)
-        //    {
-        //        answer.Append("\n---" + ConnectedPlanets[i].GetPlanet().Name + "\t" + ConnectedPlanets[i].ConnectedWeight);
-        //    }
-
-        //    return answer.ToString();
-        //}
     }
 }
