@@ -39,7 +39,7 @@ namespace DBContext.Models
             _connectionService.CreateConnectionBothWays(A, D, 11);
             _connectionService.CreateConnectionBothWays(D, E, 7);
             _connectionService.CreateConnectionBothWays(D, F, 26);
-            _connectionService.CreateConnectionBothWays(D, G, 5);
+            //_connectionService.CreateConnectionBothWays(D, G, 5);
             _connectionService.CreateConnectionBothWays(E, F, 14);
             _connectionService.CreateConnectionBothWays(G, H, 3);
             _connectionService.CreateConnectionBothWays(G, J, 5);
