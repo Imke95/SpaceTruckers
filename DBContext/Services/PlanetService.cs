@@ -58,6 +58,11 @@ namespace DBContext.Services
 
         public void DeletePlanet(int id)
         {
+            //return (from p in GetAllPlanets() where p.PlanetId == id select p).FirstOrDefault();
+
+            List<Connection> connectionIds = (from c in _context.Connections where c.Owner.PlanetId == id || c.ConnectedTo.PlanetId == id select c).ToList<Connection>();
+            _context.Connections.RemoveRange(connectionIds);
+            _context.SaveChanges();
             _context.Remove(_context.Planets.Find(id));
             _context.SaveChanges();
         }

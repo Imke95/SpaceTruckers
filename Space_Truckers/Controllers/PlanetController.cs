@@ -42,6 +42,7 @@ namespace Space_Truckers.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Planet planet)
         {
+            Debug.WriteLine("update X: "+planet.X+"Y: "+planet.Y);
             planet.PlanetId = id;
             _service.UpdatePlanet(planet);
         }
