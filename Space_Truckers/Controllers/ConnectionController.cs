@@ -68,8 +68,7 @@ namespace Space_Truckers.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Connection connection)
         {
-            connection.ConnectionId = id;
-            _service.UpdateConnection(connection);
+            _service.UpdateConnection(id,connection.ConnectedWeight);
         }
 
         [HttpDelete("{id}")]

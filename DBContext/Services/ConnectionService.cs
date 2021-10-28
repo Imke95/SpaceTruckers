@@ -51,9 +51,12 @@ namespace DBContext.Services
             _context.SaveChanges();
         }
 
-        public void UpdateConnection(Connection connection)
+        public void UpdateConnection(int id, int weight)
         {
+            Connection connection = GetConnectionById(id);
+            connection.ConnectedWeight = weight;
             Debug.WriteLine("update service");
+
             _context.Update(connection);
             _context.SaveChanges();
         }
